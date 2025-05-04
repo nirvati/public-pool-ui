@@ -6,6 +6,10 @@ on:
     - master
   workflow_dispatch:
 
+permissions:
+  contents: read
+  packages: write
+
 jobs:
   rebuild-container:
     name: "Rebuild Container with the latest base image"
